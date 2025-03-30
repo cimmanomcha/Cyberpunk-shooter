@@ -1,0 +1,20 @@
+html, body {
+      margin: 0; /* Remove default browser margins */
+      padding: 0; /* Remove default browser padding */
+      overflow: hidden; /* Prevent scrollbars if canvas is slightly too big */
+      background-color: #000; /* Black background for the page */
+
+      /* Flexbox Centering */
+      display: flex; /* Treat the body as a flex container */
+      justify-content: center; /* Center the flex item (canvas) horizontally */
+      align-items: center; /* Center the flex item (canvas) vertically */
+      height: 100vh; /* Make the body take up the full viewport height */
+      width: 100vw; /* Make the body take up the full viewport width */
+    }
+
+    canvas {
+      /* The canvas is the flex item being centered */
+      display: block; /* Ensures canvas behaves predictably */
+      box-shadow: 0 0 20px #0ff; /* Optional neon glow effect */
+      /* No margin: auto; needed with flexbox centering */
+    }
